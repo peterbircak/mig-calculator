@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import CalculatorFeedbackState from "@/components/CalculatorFeedbackState";
 import CalculatorInputControls, {
   type CalculatorInput,
@@ -661,6 +662,7 @@ export default function App() {
           </section>
         </div>
       </section>
+      <Analytics />
     </main>);
 
 }
